@@ -4,19 +4,19 @@ int main(){
 
         //Carta Super Trunfo1
 
-    char estado ;
-    char codigo ;
-    char nomeCidade ;
-    int populacao  ;
-    float area  ;
-    float pib ;
-    int pontosTuristicos ;
+    char estado [3];
+    char codigo [10];
+    char nomeCidade [100];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
 
         //Carta Super Trunfo2
 
-    char estado2 ;
-    char codigo2 ;
-    char nomeCidade2 ;
+    char estado2 [3];
+    char codigo2 [10];
+    char nomeCidade2 [100];
     int populacao2 ;
     float area2 ;
     float pib2 ;
@@ -26,55 +26,52 @@ int main(){
 
     printf("Carta Super Trunfo: 1\n");
 
-    printf("Estado: %c\n", estado);
-    scanf("%c\n", &estado);
+    printf("Informe o Estado:");
+    scanf("%2s", estado);
 
-    printf("Código: %s\n", codigo);
-    scanf("%c\n",&codigo);
+    printf("Informe o Código:");
+    scanf("%9s",codigo);
 
-    printf("Nome da Cidade: %s\n", nomeCidade);
-    scanf("%s\n", &nomeCidade);
+    printf("Informe o nome da cidade:");
+    scanf("%[^\n]", nomeCidade);
 
-    printf("População: %d\n", populacao);
-    scanf("%d\n", &populacao);
+    printf("Informe a população:");
+    scanf("%d", &populacao);
 
-    printf("Área: %.2f km²\n", area);
-    scanf("%.2f km²\n", &area);
+    printf("Informe a área:");
+    scanf("%f", &area);
 
-    printf("PIB: R$ %.2f bilhões\n", pib);
-    scanf("%.2f bilhões\n", &pib);
+    printf("Informe o PIB:");
+    scanf("%f", &pib);
 
-    printf("Pontos Turísticos: %d\n", pontosTuristicos);
-    scanf("%d\n", &pontosTuristicos);
+    printf("Informe o número de pontos turísticos:");
+    scanf("%d", &pontosTuristicos);
 
         printf("=================================\n");
             //Carta Super Trunfo2
 
     printf("Carta Super Trunfo: 2\n");
 
-    printf("Estado: %c\n", estado2);
-    scanf("%c\n", &estado2);
+    printf("Informe o Estado:");
+    scanf("%2s", estado2);
 
-    printf("Código: %s\n", codigo2);
-    scanf("%s\n", &codigo2);
+    printf("Informe o Código:");
+    scanf("%9s", codigo2);
 
-    printf("Nome da Cidade: %s\n", nomeCidade2);
-    scanf("%s\n", &nomeCidade2);
+    printf("Informe o nome da cidade:");
+    scanf("%[^\n]", nomeCidade2);
 
-    printf("População: %d\n", populacao2);
-    scanf("%d\n", &populacao2);
+    printf("Informe a população:");
+    scanf("%d", &populacao2);
 
-    printf("Área: %.2f km²\n", area2);
-    scanf("%.2f km²\n", &area2);
+    printf("Informe a área:");
+    scanf("%f", &area2);
 
-    printf("PIB: R$ %.2f bilhões\n", pib2);
-    scanf("%.2f bilhões\n", &pib2);
+    printf("Informe o PIB:");
+    scanf("%f", &pib2);
 
-    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
-    scanf("%d\n", &pontosTuristicos2);
+    printf("Informe o número de pontos turísticos:");
+    scanf("%d", &pontosTuristicos2);
 
-
-
-
-
-};
+    return 0;
+}
